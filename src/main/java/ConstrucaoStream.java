@@ -9,5 +9,9 @@ public class ConstrucaoStream {
 
         Number[] maisNotas = {7, 6.5, 7.2, 9};
         Stream.of(maisNotas).forEach(System.out::println);
+
+        System.out.println("***** <hr/> *****");
+
+        Stream.of(maisNotas).parallel().forEach(System.out::println);
     }
 }
